@@ -1,0 +1,21 @@
+{
+  "name": "rivulet-sdk",
+  "version": "0.1.0",
+  "description": "The official Deno-based SDK for building streaming providers for the Rivulet platform.",
+  "type": "module",
+  "main": "index.ts",
+  "types": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faiz4sure/rivulet-sdk.git"
+  },
+  "keywords": [
+    "rivulet",
+    "streaming",
+    "plugin",
+    "sdk",
+    "deno"
+  ],
+  "author": "faiz4sure",
+  "license": "MIT"
+}
