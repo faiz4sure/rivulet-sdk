@@ -2,7 +2,7 @@ export * from "./builders/PluginBuilder.ts";
 export * from "./builders/ResponseBuilders.ts";
 export * from "./types.ts";
 
-import { DenoIo, RPCChannel } from "npm:kkrpc/deno";
+import { DenoIo, RPCChannel } from "npm:kkrpc@^0.6.7/deno";
 import type { ProviderApi, RivuletPlugin } from "./types.ts";
 
 export function servePlugins(providers: ProviderApi[]) {

@@ -19,6 +19,6 @@
   "author": "faiz4sure",
   "license": "MIT",
   "dependencies": {
-    "kkrpc": "^2.0.0"
+    "kkrpc": "^0.6.7"
   }
 }

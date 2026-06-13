@@ -4,6 +4,6 @@
   "license": "MIT",
   "exports": "./index.ts",
   "imports": {
-    "@kkrpc/deno": "npm:@kkrpc@^2.0.0"
+    "@kkrpc/deno": "npm:@kkrpc@^0.6.7"
   }
 }
