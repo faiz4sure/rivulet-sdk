@@ -15,42 +15,42 @@ import type {
 export class SearchResultBuilder {
     private result: Partial<SearchResult> = {};
 
-    setId(id: number) {
+    setId(id: number): this {
         this.result.id = id;
         return this;
     }
 
-    setTitle(title: string) {
+    setTitle(title: string): this {
         this.result.title = title;
         return this;
     }
 
-    setUrl(url: string) {
+    setUrl(url: string): this {
         this.result.url = url;
         return this;
     }
 
-    setApiName(apiName: string) {
+    setApiName(apiName: string): this {
         this.result.apiName = apiName;
         return this;
     }
 
-    setPoster(posterUrl: string) {
+    setPoster(posterUrl: string): this {
         this.result.posterUrl = posterUrl;
         return this;
     }
 
-    setQuality(quality: string | number) {
+    setQuality(quality: string | number): this {
         this.result.quality = String(quality);
         return this;
     }
 
-    setYear(year: number) {
+    setYear(year: number): this {
         this.result.year = year;
         return this;
     }
     
-    setType(type: MediaType) {
+    setType(type: MediaType): this {
         this.result.type = type;
         return this;
     }
@@ -67,7 +67,7 @@ export class HomePageBuilder {
     private sections: HomePageSection[] = [];
     private hasNextPage?: boolean;
 
-    addSection(title: string, items: SearchResult[], isHorizontalImages = false) {
+    addSection(title: string, items: SearchResult[], isHorizontalImages = false): this {
         this.sections.push({
             title,
             items,
@@ -76,7 +76,7 @@ export class HomePageBuilder {
         return this;
     }
 
-    setHasNextPage(hasNextPage: boolean) {
+    setHasNextPage(hasNextPage: boolean): this {
         this.hasNextPage = hasNextPage;
         return this;
     }
@@ -93,57 +93,57 @@ export class HomePageBuilder {
 export class EpisodeBuilder {
     private episode: Partial<EpisodeDetail> = {};
 
-    setTitle(title: string) {
+    setTitle(title: string): this {
         this.episode.title = title;
         return this;
     }
 
-    setUrl(url: string) {
+    setUrl(url: string): this {
         this.episode.url = url;
         return this;
     }
 
-    setNumber(num: number) {
+    setNumber(num: number): this {
         this.episode.number = num;
         return this;
     }
 
-    setSeason(season: number) {
+    setSeason(season: number): this {
         this.episode.season = season;
         return this;
     }
     
-    setPoster(posterUrl: string) {
+    setPoster(posterUrl: string): this {
         this.episode.posterUrl = posterUrl;
         return this;
     }
 
-    setSeasonIndex(seasonIndex: number) {
+    setSeasonIndex(seasonIndex: number): this {
         this.episode.seasonIndex = seasonIndex;
         return this;
     }
 
-    setDescription(description: string) {
+    setDescription(description: string): this {
         this.episode.description = description;
         return this;
     }
 
-    setScore(score: number) {
+    setScore(score: number): this {
         this.episode.score = score;
         return this;
     }
 
-    setIsFiller(isFiller: boolean) {
+    setIsFiller(isFiller: boolean): this {
         this.episode.isFiller = isFiller;
         return this;
     }
 
-    setAirDate(airDate: number) {
+    setAirDate(airDate: number): this {
         this.episode.airDate = airDate;
         return this;
     }
 
-    setRunTime(runTime: string | number) {
+    setRunTime(runTime: string | number): this {
         this.episode.runTime = runTime;
         return this;
     }
@@ -160,107 +160,107 @@ export class LoadResultBuilder {
     private result: Partial<LoadResult> = {};
     private episodes: EpisodeDetail[] = [];
 
-    setTitle(title: string) {
+    setTitle(title: string): this {
         this.result.title = title;
         return this;
     }
 
-    setUrl(url: string) {
+    setUrl(url: string): this {
         this.result.url = url;
         return this;
     }
 
-    setApiName(apiName: string) {
+    setApiName(apiName: string): this {
         this.result.apiName = apiName;
         return this;
     }
 
-    setType(type: MediaType) {
+    setType(type: MediaType): this {
         this.result.type = type;
         return this;
     }
 
-    setPoster(posterUrl: string) {
+    setPoster(posterUrl: string): this {
         this.result.posterUrl = posterUrl;
         return this;
     }
     
-    setBackgroundPoster(bgUrl: string) {
+    setBackgroundPoster(bgUrl: string): this {
         this.result.backgroundPosterUrl = bgUrl;
         return this;
     }
 
-    setPlot(plot: string) {
+    setPlot(plot: string): this {
         this.result.plot = plot;
         return this;
     }
 
-    setYear(year: number) {
+    setYear(year: number): this {
         this.result.year = year;
         return this;
     }
 
-    setScore(score: number) {
+    setScore(score: number): this {
         this.result.score = score;
         return this;
     }
 
-    setDuration(duration: string | number) {
+    setDuration(duration: string | number): this {
         this.result.duration = duration;
         return this;
     }
 
-    setGenres(genres: string[]) {
+    setGenres(genres: string[]): this {
         this.result.genres = genres;
         return this;
     }
 
-    setUniqueUrl(uniqueUrl: string) {
+    setUniqueUrl(uniqueUrl: string): this {
         this.result.uniqueUrl = uniqueUrl;
         return this;
     }
 
-    setLogoUrl(logoUrl: string) {
+    setLogoUrl(logoUrl: string): this {
         this.result.logoUrl = logoUrl;
         return this;
     }
 
-    setPosterHeaders(headers: Record<string, string>) {
+    setPosterHeaders(headers: Record<string, string>): this {
         this.result.posterHeaders = headers;
         return this;
     }
 
-    setContentRating(contentRating: string) {
+    setContentRating(contentRating: string): this {
         this.result.contentRating = contentRating;
         return this;
     }
 
-    setComingSoon(comingSoon: boolean) {
+    setComingSoon(comingSoon: boolean): this {
         this.result.comingSoon = comingSoon;
         return this;
     }
 
-    setActors(actors: ActorData[]) {
+    setActors(actors: ActorData[]): this {
         this.result.actors = actors;
         return this;
     }
 
-    setTrailers(trailers: TrailerData[]) {
+    setTrailers(trailers: TrailerData[]): this {
         this.result.trailers = trailers;
         return this;
     }
 
-    setRecommendations(recommendations: SearchResult[]) {
+    setRecommendations(recommendations: SearchResult[]): this {
         this.result.recommendations = recommendations;
         return this;
     }
 
-    setSyncData(syncData: Record<string, string>) {
+    setSyncData(syncData: Record<string, string>): this {
         this.result.syncData = syncData;
         return this;
     }
 
-    addEpisodes(episodes: EpisodeDetail[]) {
+    addEpisodes(episodes: EpisodeDetail[]): this {
         this.episodes.push(...episodes);
         return this;
     }
@@ -279,27 +279,27 @@ export class LoadResultBuilder {
 export class StreamBuilder {
     private stream: Partial<StreamLink> = {};
 
-    setTitle(title: string) {
+    setTitle(title: string): this {
         this.stream.title = title;
         return this;
     }
 
-    setUrl(url: string) {
+    setUrl(url: string): this {
         this.stream.url = url;
         return this;
     }
 
-    setQuality(quality: number) {
+    setQuality(quality: number): this {
         this.stream.quality = quality;
         return this;
     }
 
-    setIsM3u8(isM3u8: boolean) {
+    setIsM3u8(isM3u8: boolean): this {
         this.stream.isM3u8 = isM3u8;
         return this;
     }
 
-    setHeaders(headers: Record<string, string>) {
+    setHeaders(headers: Record<string, string>): this {
         this.stream.headers = headers;
         return this;
     }
@@ -315,17 +315,17 @@ export class StreamBuilder {
 export class SubtitleBuilder {
     private subtitle: Partial<Subtitle> = {};
 
-    setLanguage(language: string) {
+    setLanguage(language: string): this {
         this.subtitle.language = language;
         return this;
     }
 
-    setUrl(url: string) {
+    setUrl(url: string): this {
         this.subtitle.url = url;
         return this;
     }
 
-    setHeaders(headers: Record<string, string>) {
+    setHeaders(headers: Record<string, string>): this {
         this.subtitle.headers = headers;
         return this;
     }
@@ -342,12 +342,12 @@ export class StreamResultBuilder {
     private streams: StreamLink[] = [];
     private subtitles: Subtitle[] = [];
 
-    addStream(stream: StreamLink) {
+    addStream(stream: StreamLink): this {
         this.streams.push(stream);
         return this;
     }
 
-    addSubtitle(subtitle: Subtitle) {
+    addSubtitle(subtitle: Subtitle): this {
         this.subtitles.push(subtitle);
         return this;
     }

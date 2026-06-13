@@ -7,7 +7,7 @@
   "types": "index.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/faiz4sure/rivulet-sdk.git"
+    "url": "git+https://github.com/faiz4sure/rivulet-sdk.git"
   },
   "keywords": [
     "rivulet",
