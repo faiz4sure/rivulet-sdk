@@ -8,7 +8,7 @@ You can import the SDK directly in your Deno project via NPM:
 
 ```typescript
 // You can use npm: specifiers directly in Deno without needing an install command!
-import { servePlugins } from "npm:rivulet-sdk";
+import { servePlugins } from "jsr:@rivulet/sdk";
 import myProvider from "./providers/myProvider.ts";
 
 servePlugins([myProvider]);
