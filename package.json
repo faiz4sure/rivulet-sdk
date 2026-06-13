@@ -17,5 +17,8 @@
     "deno"
   ],
   "author": "faiz4sure",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "kkrpc": "^2.0.0"
+  }
 }

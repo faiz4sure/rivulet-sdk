@@ -2,5 +2,8 @@
   "name": "@rivulet/sdk",
   "version": "0.1.0",
   "license": "MIT",
-  "exports": "./index.ts"
+  "exports": "./index.ts",
+  "imports": {
+    "@kkrpc/deno": "npm:@kkrpc@^2.0.0"
+  }
 }
